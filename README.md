@@ -27,3 +27,43 @@ A Linux Bash automation project that creates scheduled backups of a target direc
 backup-project/
 ├── backup.sh
 ├── README.md
+```
+------------------------------------------------------------------------------------
+
+## Future Improvements
+
+### Email Alerts on Failed Backups
+Use `mail`, `sendmail`, or an SMTP API to notify the user when a backup fails or disk space runs low.
+
+### Encrypted Backups
+Protect sensitive data by encrypting archives with tools like `gpg` or `openssl` before storing them.
+
+### Restore Script
+Create a companion `restore.sh` script that allows users to quickly extract and recover backups when needed.
+
+### Cloud Backup Integration
+Automatically upload completed backups to services such as AWS S3, Google Drive, Dropbox, or rsync remote servers.
+
+### GUI Dashboard
+Build a simple interface using Python Tkinter, Flask, or Electron to monitor backup status, logs, storage usage, and run manual backups.
+
+### Config File Support
+Move hardcoded paths and retention settings into a `config.conf` file for easier customization.
+
+### Compression Options
+Allow users to choose between `.tar.gz`, `.zip`, or higher compression methods like `xz`.
+
+### Incremental Backups
+Only back up changed files instead of the full directory each time, saving space and time.
+
+### Backup Verification
+Automatically test archive integrity after creation to ensure backups are usable.
+
+### Multi-Directory Support
+Back up multiple folders in one run such as Documents, Pictures, and Projects.
+
+### Webhook / Discord Alerts
+Send success or failure notifications to Discord, Slack, or other webhook services.
+
+### Systemd Timer Support
+Replace cron with modern Linux `systemd timers` for better logging and control.
