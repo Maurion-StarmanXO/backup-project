@@ -31,11 +31,11 @@ backup-project/
 ## How to use 
 Inside your terminal use these:
 
-chmod +x backup.sh
-./backup.sh
-crontab -l
-cat ~/backups/backup.log
-ls -lt ~/backups/*.tar.gz
+- chmod +x backup.sh
+- ./backup.sh
+- crontab -l
+- cat ~/backups/backup.log
+- ls -lt ~/backups/*.tar.gz
 
 ------------------------------------------------------------------------------------
 
